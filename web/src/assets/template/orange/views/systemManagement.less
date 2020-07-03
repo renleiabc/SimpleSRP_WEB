@@ -1,0 +1,250 @@
+/*
+ * @Author: aFei
+ * @Date: 2018-07-19 17:48:16
+ */
+/*
+ * @LastEditors: renlei
+ * @LastEditTime: 2020-06-04 18:37:49
+ */
+//系统告警
+.views-system-management-system-alarm {
+}
+.warn-system-management {
+  .controls {
+    padding-top: 10px;
+    text-align: right;
+  }
+  .title {
+    line-height: 1.5;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  .error {
+    display: block;
+    color: red;
+    line-height: 1.5;
+    height: 16px;
+  }
+  .input-v {
+    width: 80%;
+  }
+  .v-flow {
+    display: flex;
+    flex-wrap: wrap;
+    .v-warn {
+      box-sizing: border-box;
+      margin: 1%;
+      padding: 1%;
+      width: 254px;
+      border: 1px solid #999999;
+      p {
+        font-size: 15px;
+        padding: 6px 0;
+      }
+    }
+  }
+  .text-title {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    padding-top: 10px;
+    span {
+      color: #f48300;
+    }
+  }
+}
+.system-tip {
+  font-size: 14px;
+  color: #5c6266;
+  line-height: 1.5em;
+}
+.el-tooltip__popper.is-light {
+  background: #fff;
+  border: 1px solid #dcdfe6;
+}
+//系统日志
+.views-system-management-system-log {
+}
+//系统设置
+.views-system-management-system-setting {
+  .disk-title,
+  .log-title {
+    color: #5f5f5f;
+    font-size: 14px;
+    .el-input__icon {
+      line-height: 30px;
+    }
+    .el-input__inner {
+      width: 116px;
+    }
+  }
+  .el-input-group__append {
+    padding: 0 10px;
+  }
+  .quota-title {
+    display: flex;
+    justify-content: space-between;
+    .error {
+      display: block;
+      color: red;
+      line-height: 1.5;
+      height: 16px;
+    }
+    .item {
+      border: 1px solid #dddddd;
+      height: 360px;
+      flex: 1 1 auto;
+      margin-right: 30px;
+      padding: 16px;
+      box-sizing: border-box;
+      position: relative;
+      &.else {
+        flex: 2 1 auto;
+        margin-right: 0;
+      }
+      .item-top {
+        color: #323232;
+        font-size: 16px;
+      }
+      .content {
+        > p {
+          font-size: 14px;
+          color: #6c6c6c;
+          margin-top: 14px;
+          margin-bottom: 5px;
+        }
+        .el-input__icon {
+          line-height: 30px;
+        }
+        .el-input .el-input__inner {
+          height: 30px !important;
+        }
+        .group {
+          margin-top: 20px;
+          > p {
+            font-size: 14px;
+            color: #323232;
+            margin-bottom: 10px;
+          }
+          .group-content {
+            display: flex;
+            .group-content-item {
+              width: 100%;
+              p {
+                font-size: 14px;
+                color: #6c6c6c;
+                margin-bottom: 5px;
+              }
+              &:first-child {
+                // width: calc(100% - 112px);
+                .el-input {
+                  width: 90%;
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .controls {
+        position: absolute;
+        bottom: 20px;
+        right: 16px;
+      }
+    }
+  }
+  .quota-content {
+    border: 1px solid #dddddd;
+    padding: 16px;
+    margin-top: 20px;
+    position: relative;
+    > p {
+      font-size: 16px;
+      color: #323232;
+    }
+  }
+  .diskCleaningPop {
+    .content {
+      font-size: 14px;
+      .el-input__icon {
+        line-height: 30px;
+      }
+      .el-date-editor.el-input,
+      .el-date-editor.el-input__inner {
+        width: 160px;
+      }
+      .el-input__inner {
+        width: 140px;
+      }
+    }
+  }
+  .setResourcePop {
+    .el-dialog__body {
+      padding: 10px 20px;
+    }
+    .tab-content {
+      margin: 0;
+      .el-radio__label {
+        display: none;
+      }
+    }
+  }
+}
+.manageAuthor {
+  width: 900px;
+  .author-label {
+    width: 130px;
+    text-align: right;
+  }
+  .author-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    .el-input {
+      width: calc(100% - 400px);
+      .el-input__inner {
+        line-height: 34px;
+        height: 34px;
+      }
+    }
+    .el-button--primary {
+      margin-left: auto;
+      line-height: 34px;
+      height: 34px;
+      padding: 0 20px;
+    }
+  }
+  .author-upload {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    .upload-demo {
+      width: calc(100% - 130px);
+    }
+  }
+  .manage-have {
+    background: #fff8ed;
+    display: flex;
+    align-items: center;
+    .mange-have-inf {
+      height: 60px;
+      margin: 0 auto;
+      flex: 1;
+    }
+    .mange-have-inf > div {
+      height: 30px;
+      line-height: 30px;
+      color: #ffa406;
+    }
+  }
+}
+.manage-no,
+.manage-have {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  background: #f7f7f7;
+  color: #999999;
+}
